@@ -1,19 +1,35 @@
 // import logo from './logo.svg';
 import './App.css';
-/* const number = 5555;
-const singer = { name: 'MAhfuz', job: 'singer' }
-const singer2 = { name: 'Eva apa', job: 'singer' }
+const number = 5555;
+const singers = [{ name: 'MAhfuz', job: 'singer' },
+{ name: 'Eva apa', job: 'singer' },
+{ name: 'agun', job: 'singer' },
+{ name: 'subro', job: 'singer' }]
 const singerStyle = {
   color: 'red',
   backgroundColor: 'blue'
-} */
+}
 
 function App() {
+  const nayoks = ['rubel', 'sakib', 'kuber', 'bappa', 'jashim'];
   return (
     <div className="App">
-      <Person name="rubel" nayika="mousumi"></Person>
+      {
+        nayoks.map(nayok => <li>Name:{nayok}</li>)
+      }
+      {/* {
+        nayoks.map(nayok => <Person name={nayok}></Person>)
+      } */}
+      {
+        singers.map(singer => <Person name={singer.name} nayika={singer.job}></Person>)
+      }
+
+      {/* <Person name={nayoks[0]} nayika="mousumi"></Person>
+      <Person name={nayoks[1]} nayika="mousumi"></Person>
+      <Person name={nayoks[2]} nayika="mousumi"></Person>
+      <Person name={nayoks[3]} nayika="mousumi"></Person>
       <Person name="sakib" nayika="shisir"></Person>
-      <Person name="kuber" nayika="kapila"></Person>
+      <Person name="kuber" nayika="kapila"></Person> */}
       <h5>Ekhane o lekha jay</h5>
       <Friend name="tamim" phone="0170"></Friend>
       <Friend name="mushfiq" phone="0180"></Friend>
