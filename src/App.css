@@ -39,8 +39,16 @@
 }
 
 .container {
+  margin-bottom: 20px;
   color: aliceblue;
   background-color: #61dafb;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.person {
+  background-color: #61dafb;
+  margin: 20px;
   padding: 20px;
   border-radius: 20px;
 }
