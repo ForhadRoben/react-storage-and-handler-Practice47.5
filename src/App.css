@@ -38,11 +38,17 @@
   }
 }
 
-.todos {
-  color: #61dafb;
-  background-color: antiquewhite;
+.container {
+  margin-bottom: 20px;
+  color: aliceblue;
+  background-color: #61dafb;
   padding: 20px;
+  border-radius: 20px;
+}
+
+.person {
+  background-color: #61dafb;
   margin: 20px;
-  border-radius: 10px;
-  border: 2px solid yellow;
+  padding: 20px;
+  border-radius: 20px;
 }
